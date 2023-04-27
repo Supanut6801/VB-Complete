@@ -128,11 +128,12 @@ Public Class Form1
         Counter = Counter + 1
         Dim set2 = client.Set("Counter", Counter)
 
+
         'Database'
 
         Dim setter = client.Set("Database/" + txtTime.Text, info)
 
-        ' number of each type of workpiece
+        'number of each type of workpiece
         'Dim WCP = client.Get("Total Woodpiece")
         'Dim MCP = client.Get("Total Metalpiece")
 
@@ -167,10 +168,19 @@ Public Class Form1
         '    DataGridView1.Rows.Remove(Row)
         'Next
 
-        S1 = S2 = S3 = S4 = 0
-        A1 = A2 = 0
-        Counter = WC = MC = 0
+        S1 = 0
+        S2 = 0
+        S3 = 0
+        S4 = 0
+        S5 = 0
+        S6 = 0
 
+        A1 = 0
+        A2 = 0
+
+        Counter = 0
+        WC = 0
+        MC = 0
 
     End Sub
 
